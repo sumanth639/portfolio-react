@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+/* in your global CSS file */
+.glass-card {
+  background: rgba(30, 30, 40, 0.55);
+  box-shadow: 0 8px 32px 0 rgba(52, 31, 104, 0.19);
+  backdrop-filter: blur(12px) saturate(155%);
+  border: 1px solid rgba(135, 72, 192, 0.17);
+}
