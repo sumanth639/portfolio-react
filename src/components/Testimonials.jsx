@@ -11,42 +11,42 @@ const testimonials = [
       'Mark is a highly skilled engineer and a great team player. His contributions were invaluable to our project.',
     author: 'John Doe',
     role: 'Tech Lead',
-    image: 'https://placehold.co/400x500',
+    image: '/test1.jpg',
   },
   {
     quote:
       "We were impressed with Mark's problem-solving abilities and his dedication to delivering high-quality code.",
     author: 'Jane Smith',
     role: 'Project Manager',
-    image: 'https://placehold.co/400x500',
+    image: '/test2.jpg',
   },
   {
     quote:
       'Mark is a proactive and reliable engineer who always goes the extra mile to ensure project success.',
     author: 'Peter Jones',
     role: 'CTO',
-    image: 'https://placehold.co/400x500',
+    image: '/test3.jpg',
   },
   {
     quote:
       'Working with Mark was a fantastic experience. His technical expertise and communication skills are top-notch.',
     author: 'Alice Brown',
     role: 'UI/UX Designer',
-    image: 'https://placehold.co/400x500',
+    image: '/test4.jpg',
   },
   {
     quote:
       'Mark consistently delivers high-quality work and is a valuable asset to any team. I highly recommend him.',
     author: 'Bob Williams',
     role: 'Product Owner',
-    image: 'https://placehold.co/400x500',
+    image: '/test5.jpg',
   },
   {
     quote:
       'His ability to grasp complex technical challenges and implement effective solutions is truly remarkable.',
     author: 'Carol Davis',
     role: 'QA Engineer',
-    image: 'https://placehold.co/400x500',
+    image: '/test3.jpg',
   },
 ];
 
@@ -72,11 +72,11 @@ const Testimonials = () => {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-gray-800/60 backdrop-blur-md rounded-xl p-8 border border-gray-700/50 text-center shadow-lg hover:shadow-purple-500/50 transition-shadow duration-300 flex flex-col items-center">
+              <div className="bg-gray-800/60 backdrop-blur-md rounded-xl p-8 border border-gray-700/50 text-center shadow-lg hover:shadow-purple-500/50 transition-shadow duration-300 flex flex-col items-center ">
                 <img
                   src={testimonial.image}
                   alt={testimonial.author}
-                  className="w-20 h-20 object-cover rounded-full mb-6 border-2 border-purple-500"
+                  className="w-20 h-20 object-contain rounded-full mb-6 border-2 border-purple-500"
                 />
                 <p className="text-gray-300 italic mb-4">
                   "{testimonial.quote}"
